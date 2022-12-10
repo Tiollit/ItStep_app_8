@@ -20,6 +20,5 @@ int main()
 	char* Lowercase(char* str1);                      // функція перетворює рядок у нижній регістр
 	char* mystrrev(char* str);                        // функція реверсує рядок і повертає покажчик на новий рядок
 	 
-
 	return 0;
 }
