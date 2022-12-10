@@ -13,26 +13,24 @@ int main()
 	char Alphabet4[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char str1[500];
 	char str2[100];
+	char str3[100];
 	int Symbol = 0, Number = 0;
 	cout << "Incert speech: ";
 	gets_s(str1);
-	cout << "Incert a word: ";
+	cout << "Incert a looking word: ";
 	gets_s(str2);
-
-	for (int i = 0; i < strlen(str1); i++)
-	{
-		char* word = strstr(str1, str2);
-		if (*word != 0)
-		{
-			strcpy(word, str2);
-		}
-	}
+	cout << "Incert a new word: ";
+	gets_s(str3);
+		
+    
+	
 	cout << "New speech: " << endl;
 	cout << str1;
 	cout << endl;
 
 	for (int i = 0; i < strlen(str1); i++)
 	{
+		if (i == 0) str1[i] = toupper(str1[i]);
 		if (str1[i] == '.' && str1[i + 1] == ' ') str1[i + 2] = toupper(str1[i + 2]);
 		if (str1[i] == '.' && str1[i + 1] != ' ') str1[i + 1] = toupper(str1[i + 1]);
 	}
