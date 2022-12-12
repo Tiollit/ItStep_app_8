@@ -14,6 +14,7 @@ int main()
 	char str1[500];
 	char str2[100];
 	char str3[100];
+	char Newstr[500];
 	int Symbol = 0, Number = 0;
 	cout << "Incert speech: ";
 	gets_s(str1);
@@ -21,9 +22,8 @@ int main()
 	gets_s(str2);
 	cout << "Incert a new word: ";
 	gets_s(str3);
-		
-    
 	
+
 	cout << "New speech: " << endl;
 	cout << str1;
 	cout << endl;
@@ -48,7 +48,7 @@ int main()
 		Symbol = 0;
 	}
 
-	for (int i = 0; i < strlen(str1); i++) if (isdigit(str1[i]) == 1) Number += 1;
+	for (int i = 0; i < strlen(str1); i++) if (isdigit(str1[i])) Number += 1;
 	cout << "The Number of digits in speech is " << Number << endl;
 
 	return 0;
