@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	int a;
-	char str1[500], str2[500];
+	char str1[500], str2[100];
 	cout << "Incert 2 speeches: ";
 	cout << "Speech 1:";
 	gets_s(str1);
