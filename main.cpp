@@ -13,8 +13,10 @@ int main()
 	cout << "Speech 2:";
 	gets_s(str2);
 
-	int mystrcmp(const char* str1, const char* str2); // функція порівнює два рядки, та, якщо рядки рівні, повертає 0, якщо перший рядок є більшим за другий, то повертає 1, інакше - 1
-	int StringToNumber(char* str1);                   // функція конвертує рядок у число та повертає це число
+	if (strcmp(str1, str2) == 0) cout << "Speeches the same";
+	else if (strcmp(str1, str2) == 1) cout << "str1 more then str2";
+	else cout << "str2 more then str1";
+	int StringToNumber(char * str1);                   // функція конвертує рядок у число та повертає це число
 	char* NumberToString(int number);                 // функція конвертує число в рядок і повертає покажчик на цей рядок
 	char* Uppercase(char* str1);                      // функція перетворює рядок у верхній регістр
 	char* Lowercase(char* str1);                      // функція перетворює рядок у нижній регістр
