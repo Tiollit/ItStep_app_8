@@ -7,6 +7,7 @@ int main()
 {
 	int a;
 	char str1[500], str2[100];
+	char str3[] = "1234567890";
 	cout << "Incert 2 speeches: ";
 	cout << "Speech 1:";
 	gets_s(str1);
@@ -16,7 +17,7 @@ int main()
 	if (strcmp(str1, str2) == 0) cout << "Speeches the same";
 	else if (strcmp(str1, str2) == 1) cout << "str1 more then str2";
 	else cout << "str2 more then str1";
-	int StringToNumber(char * str1);                   // ôóíêö³ÿ êîíâåğòóº ğÿäîê ó ÷èñëî òà ïîâåğòàº öå ÷èñëî
+	a = StringToNumber(str3);                   // ôóíêö³ÿ êîíâåğòóº ğÿäîê ó ÷èñëî òà ïîâåğòàº öå ÷èñëî
 	char* NumberToString(int number);                 // ôóíêö³ÿ êîíâåğòóº ÷èñëî â ğÿäîê ³ ïîâåğòàº ïîêàæ÷èê íà öåé ğÿäîê
 	char* Uppercase(char* str1);                      // ôóíêö³ÿ ïåğåòâîğşº ğÿäîê ó âåğõí³é ğåã³ñòğ
 	char* Lowercase(char* str1);                      // ôóíêö³ÿ ïåğåòâîğşº ğÿäîê ó íèæí³é ğåã³ñòğ
