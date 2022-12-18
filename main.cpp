@@ -25,8 +25,7 @@ int LookForWords(const char* text, const char* word)
 			}	
 			if (triger != false)
 			{
-				n += 1;
-				i = index - 1;
+				n += 1;				
 			}
 		}		
 	}
@@ -39,7 +38,7 @@ int main()
 string text, word, new_text_reverse, new_text_reversespeech;	
 cout << "Insert speech: " << endl;
 getline(cin, text);
-cout << "Insetr word: " << endl;
+cout << "Insert word: " << endl;
 getline(cin, word);
 int n = LookForWords(text.c_str(), word.c_str());
 cout << "The number of word: " << word << " in text is: " << n << endl;
