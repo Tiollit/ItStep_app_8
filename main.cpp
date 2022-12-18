@@ -17,7 +17,7 @@ int main()
 	if (strcmp(str1, str2) == 0) cout << "Speeches the same";
 	else if (strcmp(str1, str2) == 1) cout << "str1 more then str2";
 	else cout << "str2 more then str1";
-	a = StringToNumber(str3);                   // функція конвертує рядок у число та повертає це число
+	a = StringToNumber(str3);                         // функція конвертує рядок у число та повертає це число
 	char* NumberToString(int number);                 // функція конвертує число в рядок і повертає покажчик на цей рядок
 	char* Uppercase(char* str1);                      // функція перетворює рядок у верхній регістр
 	char* Lowercase(char* str1);                      // функція перетворює рядок у нижній регістр
