@@ -14,16 +14,16 @@ int main()
 	cout << "Speech 2:";
 	gets_s(str2);
 
-	if (strcmp(str1, str2) == 0) cout << "Speeches the same";
+	if (strcmp(str1, str2) == 0) cout << "Speeches the same" << endl;
 	else if (strcmp(str1, str2) == 1) cout << "str1 more then str2" << endl;
-	else cout << "str2 more then str1";
+	else cout << "str2 more then str1" << endl;
 	char* StringToNumber(char *str3);                 // функція конвертує рядок у число та повертає це число
 	char* NumberToString(int number);                 // функція конвертує число в рядок і повертає покажчик на цей рядок
-	toupper(*str1);                      // функція перетворює рядок у верхній регістр
-	cout << "Upper Case str1: " << str1 << endl;
-    tolower(*str2);                      // функція перетворює рядок у нижній регістр
-	cout << "Lower Case str2: " << str2 << endl;
-	_strrev(str3);                                     // функція реверсує рядок і повертає покажчик на новий рядок
+	toupper(str1[2]);                                   // функція перетворює рядок у верхній регістр
+	cout << "Upper Case symbol #2 str1: " << str1 << endl;
+    tolower(str2[2]);                                   // функція перетворює рядок у нижній регістр
+	cout << "Lower Case symbol #2 str2: " << str2 << endl;
+	_strrev(str3);                                    // функція реверсує рядок і повертає покажчик на новий рядок
 	cout << "Reverse of str3: " << str3 << endl;
 	return 0;
 }
