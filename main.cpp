@@ -30,8 +30,16 @@ int LookForWords(const char* text, const char* word)
 		}		
 	}
 	return n;
-
 }
+
+int NofSpeeches(const char* text)
+{
+	for (size_t i = 0; i < strlen(text); i++)
+	{
+
+    }
+}
+
 string reverse(const char* text, char* new_text_reverse)
 {
 	string temp;
@@ -65,5 +73,6 @@ int n = LookForWords(text.c_str(), word.c_str());
 cout << "The number of word: " << word << " in text is: " << n << endl;
 string reverse(text.c_str(), new_text_reverse.c_str());
 string reverse_2(text.c_str(), new_text_reversespeech.c_str());
+
 return 0;  
 }
