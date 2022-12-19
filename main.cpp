@@ -36,7 +36,7 @@ int NofSpeeches(const char* text)
 {
 	for (size_t i = 0; i < strlen(text); i++)
 	{
-
+      
     }
 }
 
