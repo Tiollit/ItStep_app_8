@@ -4,6 +4,7 @@
 #include <string.h>
 using namespace std;
 
+
 int main()
 { 
 
@@ -22,11 +23,6 @@ int main()
 	gets_s(str2);
 	cout << "Incert a new word: ";
 	gets_s(str3);
-	
-
-	cout << "New speech: " << endl;
-	cout << str1;
-	cout << endl;
 
 	for (int i = 0; i < strlen(str1); i++)
 	{
